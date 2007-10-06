@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<posts tag="ruby" user="jnunemaker">
+  <post tag="api pastie ruby" extended="A pastie that is pastie's api." href="http://pastie.caboo.se/98642" time="2007-10-03T18:52:37Z" others="1" hash="bc9a793e0609ca89517da28cfed7d0cf" description="Pastie's API"/>
+  <post tag="rubyonrails ruby railstips" extended="Checks pre-Rails 2.0 apps for compatibility (v1.0)" href="http://pastie.caboo.se/private/krcevozww61drdeza13e3a" time="2007-09-28T15:55:14Z" others="4" hash="e0ffa52dd8adb36bb85cba148ae21224" description="Private Paste - Pastie"/>
+  <post tag="ruby rubyonrails flex" extended="Several examples of flex and ruby on rails." href="http://www.flex888.com/2007/09/20/10-flex-and-ruby-on-rails-integration-examples.html" time="2007-09-28T14:26:24Z" others="1" hash="6f34c9c570d60b7b0eb91d24f0cf00b3" description="10 Flex and Ruby on Rails Integration Examples : Flex RIA"/>
+  <post tag="sequel ruby" extended="How to do active record-esque serialized columns in sequel." href="http://pastie.caboo.se/96612" time="2007-09-15T02:55:01Z" others="1" hash="8c21e51699bc84877fc9f041c00f4401" description="#96612 - Pastie"/>
+  <post tag="video flv ruby" extended="A gem in ruby for processing video and converting to different formats and sizes." href="http://www.railspikes.com/2007/9/13/rvideo-is-alive-really" time="2007-09-14T17:14:11Z" others="1" hash="6c47e51fda0dd4a80cf28783bd3372f6" description="Rail Spikes: RVideo is alive - really"/>
+</posts>

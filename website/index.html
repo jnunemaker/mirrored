@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Mirrored by John Nunemaker</title>
+	<link rel="stylesheet" href="css/common.css" type="text/css" />
+</head>
+<body>
+
+<div id="wrapper">
+	<div id="header">
+		<h1>Mirrored</h1>
+		<p>Bookmarking discrimination is no more.</p>
+		
+		<ul id="nav">
+			<li><a href="mirrored/">Docs</a></li>
+			<li><a href="http://rubyforge.org/projects/mirrored/">Rubyforge Page</a></li>
+		</ul>
+	</div>
+	
+	<div id="content">
+		<p>Mirrored is a wrapper for the <a href="http://wiki.ma.gnolia.com/Mirror%27d_API">mirrored</a> <a href="http://del.icio.us">del.icio.us</a> and <a href="http://ma.gnolia.com">ma.gnolia</a> apis</a>.</p>
+		
+		<h2>Installation</h2>
+		
+		<pre><code>$ sudo gem install mirrored</code></pre>
+		
+		<h2>Usage</h2>
+		
+		<h3>Last Update</h3>
+		<pre><code class="ruby">Mirrored::Update.last # => ruby time object equal to last update</code></pre>
+		
+		<h3>Posts</h3>
+		<pre><code class="ruby"># => posts
+Mirrored::Post.find(:get)
+
+# => posts tagged ruby
+Mirrored::Post.find(:get, :tag => 'ruby')
+
+# => posts tagged ruby on oct. 5, 2007
+Mirrored::Post.find(:get, :tag => 'ruby', :dt => '2007-10-05')
+
+# => posts with url http://addictedtonew
+Mirrored::Post.find(:get, :url => 'http://addictedtonew')
+
+# => all posts (use sparingly according to delicious and magnolia)
+Mirrored::Post.find(:all)
+
+# => all posts for tag ruby (use sparingly according to delicious and magnolia)
+Mirrored::Post.find(:all, :tag => 'ruby')
+
+# most recent posts
+Mirrored::Post.find(:recent)
+
+# => most recent posts for tag ruby
+Mirrored::Post.find(:recent, :tag => 'ruby')
+
+# => 5 most recent posts for tag ruby
+Mirrored::Post.find(:recent, :tag => 'ruby', :count => '5')
+		</code></pre>
+		
+		<h3>Tags</h3>
+		<pre><code class="ruby"># gets list of all tags and the number of times you've used them
+Mirrored::Tag.find(:get)
+
+# Rename a tag
+Mirrored::Tag.rename('microsoft', 'suckfest')</code></pre>
+		
+		<h3>Dates</h3>
+		<pre><code class="ruby"># => finds all dates you have posted with counts for each day
+Mirrored::Date.find(:all)
+
+# => finds all dates you have posted something tagged ruby with counts for each day
+Mirrored::Date.find(:all, :tag => 'ruby')</code></pre>
+			
+	</div>
+
+	<div id="footer">
+		<p>Created by <a href="http://addictedtonew.com/about/">John Nunemaker</a></p>
+	</div>
+
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">_uacct = "UA-85301-14"; urchinTracker();</script>
+
+<!-- 103bees.com 'bee' code v1.11 - please do not make any changes! -->
+<script type="text/javascript" src="http://103bees.com/bees/?bee=3672&amp;fid=9245"></script>
+<!-- 103bees.com 'bee' code -->
+
+</body>
+</html>

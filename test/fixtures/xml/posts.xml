@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<posts dt="2007-10-05" tag="" user="jnunemaker" url="">
+  <post tag="ruby_on_rails rest pdf plugins railstips" extended="A nice simple example of responding to the pdf format using rails rest-fulness." href="http://codersifu.blogspot.com/2007/10/restful-pdf-on-rails-20.html" time="2007-10-05T14:59:02Z" others="1" hash="580485cf09ea39f3cb4a1182390a6dfb" description="CoderSifu: RESTful PDF on Rails 2.0"/>
+  <post tag="javascript calendar railstips" extended="A very impressive calendar widget in terms of functionality." href="http://nogray.com/calendar.php#tryit" time="2007-10-05T14:56:57Z" others="2" hash="ff2ec88c44d07f8dbfc586edf2782234" description="JavaScript Calendar Component | NoGray.com"/>
+  <post tag="rubyonrails plugins railstips twitter facebook flickr microformats gmail" extended="This code, extracted from the Rails codebase of dopplr.com, extends your User model with methods to pull in social network information from sites such as GMail, Twitter, Flickr, Facebook and any site supporting appropriate Microformats." href="http://code.google.com/p/identity-matcher/" time="2007-10-05T14:54:11Z" others="2" hash="ec750cbfcb99848ad436b23486569116" description="identity-matcher - Google Code"/>
+</posts>

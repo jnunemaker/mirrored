@@ -77,7 +77,6 @@ module Mirrored
     #   p             = Mirrored::Post.new
     #   p.url         = 'http://addictedtonew.com'
     #   p.description = 'Addicted to New by John Nuneamker'
-    #   p.dt          = Time.now.utc
     #   p.extended    = 'Really cool dude'
     #   p.tags        = %w(cool dude ruby)
     #   p.save        # => do not replace if post already exists
@@ -95,8 +94,7 @@ module Mirrored
         :url         => url, 
         :description => description, 
         :extended    => extended, 
-        :tags        => tags.map { |t| t.gsub(' ', '_') }.join(' '),
-        :dt          => dt.strftime('%Y-%m-%dT%H:%M%SZ'),
+        :tags        => (tags ? tags.map { |t| t.gsub(' ', '_') }.join(' ') : ''),
         :share       => share
       }
     end

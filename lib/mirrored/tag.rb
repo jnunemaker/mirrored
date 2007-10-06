@@ -24,8 +24,8 @@ module Mirrored
       #
       # Usage:
       #   Mirrored::Tag.rename('microsoft', 'suckfest')
-      def rename(old, new)
-        doc    = Hpricot::XML(connection.get('tags/rename'))
+      def rename(old_name, new_name)
+        doc    = Hpricot::XML(connection.get('tags/rename', :old => old_name, :new => new_name))
         result = (doc).at(:result)
         (result && result.inner_html == 'done') ? true : false
       end

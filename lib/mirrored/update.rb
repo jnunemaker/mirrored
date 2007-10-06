@@ -6,7 +6,7 @@ module Mirrored
       # Usage:
       #   Mirrored::Update.last # => a ruby time object in UTC
       def last
-        result = connection.get('/posts/update')
+        result = connection.get('posts/update')
         doc    = Hpricot::XML(result)
         update = doc.at('update')
         update ? Time.parse(update['time']) : ''

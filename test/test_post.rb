@@ -86,7 +86,6 @@ class TestPost < Test::Unit::TestCase
     post = posts.first
     post_hash = {
       :description => 'Easy charting with amcharts and ruby on rails.',
-      :dt          => '2007-10-05T03:5829Z',
       :extended    => 'Rails on the Run - Sexy charts in less than 5 minutes',
       :tags        => 'charts ruby_on_rails railstips',
       :url         => 'http://www.railsontherun.com/2007/10/4/sexy-charts-in-less-than-5-minutes',

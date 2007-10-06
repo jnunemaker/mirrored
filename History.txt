@@ -1,2 +1,5 @@
+0.1.1 - Oct 6, 2007
+			* Updated README file as I forgot to
+			
 0.1.0 - Oct 6, 2007
 			* initial release

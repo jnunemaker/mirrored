@@ -1,3 +1,6 @@
+0.1.4
+* screwed up 0.1.3, this correctly fixes hpricot issue
+
 0.1.3
 * removed specific hpricot version requirement, instead now requiring anything over 0.5
 

@@ -26,8 +26,8 @@ class TestBase < Test::Unit::TestCase
   
   test 'should find correct api url based on service' do
     Mirrored::Base.establish_connection(:delicious, 'jnunemaker', 'password')
-    assert_equal 'https://api.del.icio.us/v1', Mirrored::Base.api_url
+    assert_equal 'https://api.del.icio.us/v1/', Mirrored::Base.api_url
     Mirrored::Base.establish_connection(:magnolia, 'jnunemaker', 'password')
-    assert_equal 'https://ma.gnolia.com/api/mirrord/v1', Mirrored::Base.api_url
+    assert_equal 'https://ma.gnolia.com/api/mirrord/v1/', Mirrored::Base.api_url
   end
 end

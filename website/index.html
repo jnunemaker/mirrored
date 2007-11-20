@@ -27,6 +27,15 @@
 		
 		<h2>Usage</h2>
 		
+		<h3>Establish A Connection</h3>
+		<pre><code class="ruby"># to magnolia
+Mirrored::Base.establish_connection(:magnolia, 'jnunemaker', 'password')
+
+# or to delicious
+Mirrored::Base.establish_connection(:delicious, 'jnunemaker', 'password')
+
+# then use any of the examples below</code></pre>
+		
 		<h3>Last Update</h3>
 		<pre><code class="ruby">Mirrored::Update.last # => ruby time object equal to last update</code></pre>
 		

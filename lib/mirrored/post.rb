@@ -65,8 +65,12 @@ module Mirrored
       #   Mirrored::Post.delete('http://microsoft.com')   # => aliased version
       def destroy(url)
         doc = Hpricot::XML(connection.get('posts/delete', :url => url))
-        code = doc.at('result')['code']
-        code == 'done' ? true : false
+        if doc && doc.at('result')
+          code = doc.at('result')['code']
+          code == 'done' ? true : false
+        else
+          false
+        end
       end
       alias :delete :destroy
     end
@@ -85,8 +89,12 @@ module Mirrored
       attrs = to_h.merge((replace) ? {:replace => 'yes'} : {:replace => 'no'})
       puts attrs.inspect
       doc = Hpricot::XML(self.class.connection.get('posts/add', attrs))
-      @code = doc.at('result')['code']
-      (@code == 'done') ? true : false
+      if doc && doc.at('result')
+        @code = doc.at('result')['code']
+        (@code == 'done') ? true : false
+      else
+        false
+      end
     end
     
     def to_h #:nodoc:

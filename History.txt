@@ -1,3 +1,6 @@
+0.1.6
+* added require 'time'
+
 0.1.5
 * tweaked destroy and save to be a little less brittle
 

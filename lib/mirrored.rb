@@ -16,6 +16,7 @@ end
 
 require 'rubygems'
 require 'hpricot'
+require 'time'
 
 require 'mirrored/base'
 require 'mirrored/connection'
